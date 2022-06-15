@@ -8,13 +8,13 @@
         <a href="#projects" class="btn">
           <i class="fa fa fa-briefcase fa-btn"></i> Projects
         </a>
-        <a href="{{ site.github.owner_url }}" class="btn">
+        <a href="{{ site.github.owner_url }}" class="btn" target="_blank">
           <i class="fa fa-github fa-btn"></i> GitHub
         </a>
-        <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="btn">
+        <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="btn" target="_blank">
           <i class="fa fa-linkedin-square fa-btn"></i> LinkedIn
         </a>
-        <a href="{{ site.url }}/files/etorres_resume.pdf" class="btn">
+        <a href="{{ site.url }}/files/etorres_resume.pdf" class="btn" target="_blank">
           <i class="fa fa-file-text fa-btn"></i> Resume
         </a>
       </div>
@@ -22,14 +22,14 @@
 </header>
 <nav id="nav">
   <a href="#home" class="nav-home">Epi Torres</a>
-  <a href="{{ site.url }}/files/etorres_resume.pdf" class="nav-links">
+  <a href="{{ site.url }}/files/etorres_resume.pdf" class="nav-links" target="_blank">
     <i class="fa fa-file-text fa-btn"></i> Resume
   </a>
 
-  <a href="{{ site.github.owner_url }}" class="nav-links">
+  <a href="{{ site.github.owner_url }}" class="nav-links" target="_blank">
     <i class="fa fa-github fa-btn"></i> GitHub
   </a>
-  <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="nav-links">
+  <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="nav-links" target="_blank">
     <i class="fa fa-linkedin-square fa-btn"></i> LinkedIn
   </a>
   <a href="#projects" class="nav-links">
@@ -42,6 +42,7 @@
 </nav> 
 
 <script>
+  // Uses Vanta JS to render the animated header
   VANTA.NET({
     el: "#header",
     mouseControls: false,
