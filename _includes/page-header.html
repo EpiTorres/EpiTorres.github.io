@@ -1,0 +1,82 @@
+<a id="home"></a>
+<header class="page-header" role="banner" id="header">
+    <img src="{{ site.url }}/files/Me.jpg" class="portrait">
+    <div style="display:flex; flex-direction: column; justify-content: space-between; padding: 1.5rem 0rem;">
+      <h1 class="project-name">{{ site.title }}</h1>
+      <h2 class="project-tagline">{{ site.description }}</h2>
+      <div>
+        <a href="#projects" class="btn">
+          <i class="fa fa fa-briefcase fa-btn"></i> Projects
+        </a>
+        <a href="{{ site.github.owner_url }}" class="btn">
+          <i class="fa fa-github fa-btn"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="btn">
+          <i class="fa fa-linkedin-square fa-btn"></i> LinkedIn
+        </a>
+        <a href="{{ site.url }}/files/resume.pdf" class="btn">
+          <i class="fa fa-file-text fa-btn"></i> Resume
+        </a>
+      </div>
+  </div>
+</header>
+<nav id="nav">
+  <a href="#home" class="nav-home">Epi Torres</a>
+  <a href="{{ site.url }}/files/resume.pdf" class="nav-links">
+    <i class="fa fa-file-text fa-btn"></i> Resume
+  </a>
+
+  <a href="{{ site.github.owner_url }}" class="nav-links">
+    <i class="fa fa-github fa-btn"></i> GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="nav-links">
+    <i class="fa fa-linkedin-square fa-btn"></i> LinkedIn
+  </a>
+  <a href="#projects" class="nav-links">
+    <i class="fa fa fa-briefcase fa-btn"></i> Projects
+  </a>
+
+  <a class="icon" id="navMenu">
+    <i class="fa fa-bars" id="burger"></i>
+  </a>
+</nav> 
+
+<script>
+  VANTA.NET({
+    el: "#header",
+    mouseControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1,
+    scaleMobile: 1,
+    color: 0x6A6E84,
+    backgroundColor: 0x212226,
+    maxDistance: 15,
+    spacing: 25
+  });
+  
+  // Helper function for rendering the nav on scroll
+  function handleScroll() {
+    const headHeight = document.getElementById("header").offsetHeight;
+    console.log("hello")
+    if (document.body.scrollTop > headHeight || document.documentElement.scrollTop > headHeight) {
+      document.getElementById("nav").style.top = "0";
+    } else {
+      document.getElementById("nav").style.top = "-100px";
+    }
+  } 
+
+  // Event handler for resizing and scrolling the window
+  $(window).on("resize scroll", function() { handleScroll(); });
+
+  // Event handler for when the hamburger menu button is pressed
+  $("#navMenu").on("click", function() {
+    if ($("#nav").hasClass("responsive")) {
+      $("#nav").removeClass("responsive");
+    } else {
+      $("#nav").addClass("responsive");
+    }
+    $("#burger").toggleClass("fa-bars fa-close");
+  })
+  
+</script>

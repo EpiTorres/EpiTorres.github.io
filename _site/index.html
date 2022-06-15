@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About Me | Epi Torres</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="About Me" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Welcome to my personal website!" />
+<meta property="og:description" content="Welcome to my personal website!" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Epi Torres" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About Me" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Welcome to my personal website!","headline":"About Me","name":"Epi Torres","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=05b2d9f32a72407d17035e6caa09e2ce188a5e0a">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <a id="home"></a>
+<header class="page-header" role="banner" id="header">
+    <img src="http://localhost:4000/files/Me.jpg" class="portrait">
+    <div style="display:flex; flex-direction: column; justify-content: space-between; padding: 1.5rem 0rem;">
+      <h1 class="project-name">Epi Torres</h1>
+      <h2 class="project-tagline">Welcome to my personal website!</h2>
+      <div>
+        <a href="#projects" class="btn">
+          <i class="fa fa fa-briefcase fa-btn"></i> Projects
+        </a>
+        <a href="https://github.com/EpiTorres" class="btn">
+          <i class="fa fa-github fa-btn"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="btn">
+          <i class="fa fa-linkedin-square fa-btn"></i> LinkedIn
+        </a>
+        <a href="http://localhost:4000/files/resume.pdf" class="btn">
+          <i class="fa fa-file-text fa-btn"></i> Resume
+        </a>
+      </div>
+  </div>
+</header>
+<nav id="nav">
+  <a href="#home" class="nav-home">Epi Torres</a>
+  <a href="http://localhost:4000/files/resume.pdf" class="nav-links">
+    <i class="fa fa-file-text fa-btn"></i> Resume
+  </a>
+
+  <a href="https://github.com/EpiTorres" class="nav-links">
+    <i class="fa fa-github fa-btn"></i> GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/epifanio-torres-353875240" class="nav-links">
+    <i class="fa fa-linkedin-square fa-btn"></i> LinkedIn
+  </a>
+  <a href="#projects" class="nav-links">
+    <i class="fa fa fa-briefcase fa-btn"></i> Projects
+  </a>
+
+  <a class="icon" id="navMenu">
+    <i class="fa fa-bars" id="burger"></i>
+  </a>
+</nav> 
+
+<script>
+  VANTA.NET({
+    el: "#header",
+    mouseControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1,
+    scaleMobile: 1,
+    color: 0x6A6E84,
+    backgroundColor: 0x212226,
+    maxDistance: 15,
+    spacing: 25
+  });
+  
+  // Helper function for rendering the nav on scroll
+  function handleScroll() {
+    const headHeight = document.getElementById("header").offsetHeight;
+    console.log("hello")
+    if (document.body.scrollTop > headHeight || document.documentElement.scrollTop > headHeight) {
+      document.getElementById("nav").style.top = "0";
+    } else {
+      document.getElementById("nav").style.top = "-100px";
+    }
+  } 
+
+  // Event handler for resizing and scrolling the window
+  $(window).on("resize scroll", function() { handleScroll(); });
+
+  // Event handler for when the hamburger menu button is pressed
+  $("#navMenu").on("click", function() {
+    if ($("#nav").hasClass("responsive")) {
+      $("#nav").removeClass("responsive");
+    } else {
+      $("#nav").addClass("responsive");
+    }
+    $("#burger").toggleClass("fa-bars fa-close");
+  })
+  
+</script>
+    <main id="content" class="main-content" role="main">
+      
+      <h1 id="about-me">About Me</h1>
+<p>Hi there! My name is Epifanio Torres, but you can call me Epi! I just graduated from Princeton University as part of the Great Class of 2022. During my studies at Princeton, I majored in computer science and minored in Spanish Language and Culture.</p>
+
+<h2 id="how-i-got-started">How I Got Started</h2>
+<p>Going into college, I had no idea what I wanted to study (or really what I wanted to do with my life). Even though I enjoyed using computers and playing PC games, I had no programming experience prior to starting my studies at Princeton. Deciding that I wanted to give programming a whirl, I signed up for Princeton’s introductory computer science class during my first semester. As I worked on <a href="https://www.cs.princeton.edu/courses/archive/fall18/cos126/assignments/nbody/" target="_blank">simulating graviational forces</a> and <a href="https://www.cs.princeton.edu/courses/archive/fall18/cos126/assignments/guitar-hero/" target="_blank">programming a virtual guitar</a> as part of this class, I began to realize how much computer science fascinated me.</p>
+
+<p>The summer after my first year of college, I was chosen to participate in <a href="https://www.cs.princeton.edu/academics/ugradpgm/spe/home/">Princeton Summer Programming Experiences</a>, which focused on providing learning opportunities for students who were new to computer science. By the end of the six-week program, I had codeveloped a <a href="https://thisstillwill.itch.io/lucid">3D video game</a> and felt extremely proud of how much my programming skills had improved. Not too long afterwards, I decided to major in computer science to continue making cool applications, like video games and websites!</p>
+
+<h2 id="fun-facts">Fun Facts</h2>
+
+<p>Here is a list of fun facts about me:</p>
+<ul>
+  <li>I have adorable calico cat named Maui🐈</li>
+  <li>Two of my favorite games are <a href="https://store.steampowered.com/app/753640/Outer_Wilds/">Outer Wilds</a>👽 and <a href="https://store.steampowered.com/app/264710/Subnautica/">Subnautica</a>🐟</li>
+  <li>I’m a big fan of coffee☕ and breakfast foods🥞</li>
+  <li>Soy originario de Puerto Rico🌴</li>
+</ul>
+
+
+      <div>
+  <h1>Projects</h1>
+  <a class="nav-anchor" id="projects"></a>
+  <p>Below you can find information about all of the projects that I have undertaken over the past few years. Check them out!</p>
+  
+  <div class="proj">
+    <img src="http://localhost:4000/files/gifs//IAD.gif" class="proj-gif left">
+    <div class="proj-info">
+      <span class="proj-title">Into Another Dimension (2022)</span>
+      <span class="proj-authors">by Epi Torres</span>
+      <span class="proj-desc"><em>Into Another Dimension</em> is a proof-of-concept project that implements a 4D physics engine and 4D rendering pipeline in Unity. Interact with hyperspheres, hyperboxes, and hypercapsules in this mind-boggling prototype!</span>
+      <a href="https://github.com/EpiTorres/into-another-dimension" class="btn">
+        <i class="fa fa-code b fa-btn"></i> Code
+      </a>
+      
+        <a href="https://github.com/EpiTorres/into-another-dimension/tree/main/build" class="btn">
+          <i class="fa fa-gamepad fa-btn"></i> Demo
+        </a>
+      
+    </div>
+  </div>
+  
+  <div class="proj">
+    <img src="http://localhost:4000/files/gifs//Dino.gif" class="proj-gif left">
+    <div class="proj-info">
+      <span class="proj-title">Game Bot (2021)</span>
+      <span class="proj-authors">by Epi Torres</span>
+      <span class="proj-desc"><em>Game Bot</em> is a project aimed at teaching programmers how to implement two reinforcement learning algorithms in Python in order to train a bot that plays Google Chrome's <em>Dinosaur Game</em>. Program and train your very own dino bot below!</span>
+      <a href="https://github.com/EpiTorres/IW-2021-gamebot" class="btn">
+        <i class="fa fa-code b fa-btn"></i> Code
+      </a>
+      
+        <a href="https://github.com/EpiTorres/dino-game-rl" class="btn">
+          <i class="fa fa-gamepad fa-btn"></i> Demo
+        </a>
+      
+    </div>
+  </div>
+  
+  <div class="proj">
+    <img src="http://localhost:4000/files/gifs//Core Crawler.gif" class="proj-gif top">
+    <div class="proj-info">
+      <span class="proj-title">Core Crawler (2021)</span>
+      <span class="proj-authors">by Epi Torres & Jorge Zreik</span>
+      <span class="proj-desc"><em>Core Crawler</em> is a low-poly 3D video game where you are an astronaut exploring the center of a planet with only your grappling hook to get around. Swing through the procedurally generated world while you collect gems to increase your score while trying not to crash!</span>
+      <a href="https://github.com/jorgezreik/426-final" class="btn">
+        <i class="fa fa-code b fa-btn"></i> Code
+      </a>
+      
+        <a href="https://jorgezreik.github.io/426-final/" class="btn">
+          <i class="fa fa-gamepad fa-btn"></i> Demo
+        </a>
+      
+    </div>
+  </div>
+  
+  <div class="proj">
+    <img src="http://localhost:4000/files/gifs//Lucid.gif" class="proj-gif center">
+    <div class="proj-info">
+      <span class="proj-title">Lucid (2019)</span>
+      <span class="proj-authors">by Epi Torres & Will Svoboda</span>
+      <span class="proj-desc"><em>Lucid</em> is a 3D first-person platformer where you are trapped in a tropical dream world. Collect hidden items throughout this world to craft different abilities to help you reach new areas and ultimately escape!</span>
+      <a href="https://github.com/thisstillwill/Lucid" class="btn">
+        <i class="fa fa-code b fa-btn"></i> Code
+      </a>
+      
+        <a href="https://thisstillwill.itch.io/lucid" class="btn">
+          <i class="fa fa-gamepad fa-btn"></i> Demo
+        </a>
+      
+    </div>
+  </div>
+  
+</div>
+      <footer class="site-footer">
+  
+    <span class="site-footer-owner"><a href="https://github.com/EpiTorres/EpiTorres.github.io">EpiTorres.github.io</a> is maintained by <a href="https://github.com/EpiTorres">Epi Torres</a>.</span>
+  
+  <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+</footer>
+
+      
+    </main>
+  </body>
+
+</html>

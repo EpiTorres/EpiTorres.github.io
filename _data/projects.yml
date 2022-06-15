@@ -1,0 +1,49 @@
+- title: Into Another Dimension
+  year: 2022
+  description: <em>Into Another Dimension</em> is a proof-of-concept
+    project that implements a 4D physics engine and 4D rendering pipeline in
+    Unity. Interact with hyperspheres, hyperboxes, and hypercapsules in this 
+    mind-boggling prototype!
+  authors: Epi Torres
+  gif: /IAD.gif
+  alignGif: left
+  code: https://github.com/EpiTorres/into-another-dimension
+  demo: https://github.com/EpiTorres/into-another-dimension/tree/main/build
+  
+
+- title: Game Bot
+  year: 2021
+  description: <em>Game Bot</em> is a project aimed at teaching
+    programmers how to implement two reinforcement learning algorithms
+    in Python in order to train a bot that plays Google Chrome's <em>Dinosaur
+    Game</em>. Program and train your very own dino bot below!
+  authors: Epi Torres
+  gif: /Dino.gif
+  alignGif: left
+  code: https://github.com/EpiTorres/IW-2021-gamebot
+  demo: https://github.com/EpiTorres/dino-game-rl
+
+- title: Core Crawler
+  year: 2021
+  description: <em>Core Crawler</em> is a low-poly 3D video game
+    where you are an astronaut exploring the center of a planet with only
+    your grappling hook to get around. Swing through the procedurally
+    generated world while you collect gems to increase your score
+    while trying not to crash!
+  authors: Epi Torres & Jorge Zreik
+  gif: /Core Crawler.gif
+  alignGif: top
+  code: https://github.com/jorgezreik/426-final
+  demo: https://jorgezreik.github.io/426-final/
+
+- title: Lucid
+  year: 2019
+  description: <em>Lucid</em> is a 3D first-person platformer 
+    where you are trapped in a tropical dream world. Collect hidden
+    items throughout this world to craft different abilities to help
+    you reach new areas and ultimately escape!
+  authors: Epi Torres & Will Svoboda
+  gif: /Lucid.gif
+  alignGif: center
+  code: https://github.com/thisstillwill/Lucid
+  demo: https://thisstillwill.itch.io/lucid

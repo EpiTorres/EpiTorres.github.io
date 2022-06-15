@@ -1,0 +1,23 @@
+<div>
+  <h1>Projects</h1>
+  <a class="nav-anchor" id="projects"></a>
+  <p>Below you can find information about all of the projects that I have undertaken over the past few years. Check them out!</p>
+  {% for project in site.data.projects %}
+  <div class="proj">
+    <img src="{{ site.url }}/files/gifs/{{ project.gif }}" class="proj-gif {{ project.alignGif }}">
+    <div class="proj-info">
+      <span class="proj-title">{{ project.title }} ({{project.year}})</span>
+      <span class="proj-authors">by {{ project.authors }}</span>
+      <span class="proj-desc">{{ project.description }}</span>
+      <a href="{{ project.code }}" class="btn">
+        <i class="fa fa-code b fa-btn"></i> Code
+      </a>
+      {% if project.demo %}
+        <a href="{{ project.demo }}" class="btn">
+          <i class="fa fa-gamepad fa-btn"></i> Demo
+        </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
