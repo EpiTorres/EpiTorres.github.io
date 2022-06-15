@@ -46,6 +46,8 @@
   VANTA.NET({
     el: "#header",
     mouseControls: false,
+    touchControls: true,
+    gyroControls: false,
     minHeight: 200.00,
     minWidth: 200.00,
     scale: 1,
@@ -59,7 +61,6 @@
   // Helper function for rendering the nav on scroll
   function handleScroll() {
     const headHeight = document.getElementById("header").offsetHeight;
-    console.log("hello")
     if (document.body.scrollTop > headHeight || document.documentElement.scrollTop > headHeight) {
       document.getElementById("nav").style.top = "0";
     } else {
@@ -72,11 +73,7 @@
 
   // Event handler for when the hamburger menu button is pressed
   $("#navMenu").on("click", function() {
-    if ($("#nav").hasClass("responsive")) {
-      $("#nav").removeClass("responsive");
-    } else {
-      $("#nav").addClass("responsive");
-    }
+    $("#nav").toggleClass("responsive");
     $("#burger").toggleClass("fa-bars fa-close");
   })
   

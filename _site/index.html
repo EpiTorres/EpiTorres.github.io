@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=82b0b1d7782383a1a84d1a10458c71825408b7d7">
+    <link rel="stylesheet" href="/assets/css/style.css?v=26d2aa93b3f2f570f7bf9c342ac17ce32d159d9b">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
@@ -80,6 +80,8 @@
   VANTA.NET({
     el: "#header",
     mouseControls: false,
+    touchControls: true,
+    gyroControls: false,
     minHeight: 200.00,
     minWidth: 200.00,
     scale: 1,
@@ -93,7 +95,6 @@
   // Helper function for rendering the nav on scroll
   function handleScroll() {
     const headHeight = document.getElementById("header").offsetHeight;
-    console.log("hello")
     if (document.body.scrollTop > headHeight || document.documentElement.scrollTop > headHeight) {
       document.getElementById("nav").style.top = "0";
     } else {
@@ -106,11 +107,7 @@
 
   // Event handler for when the hamburger menu button is pressed
   $("#navMenu").on("click", function() {
-    if ($("#nav").hasClass("responsive")) {
-      $("#nav").removeClass("responsive");
-    } else {
-      $("#nav").addClass("responsive");
-    }
+    $("#nav").toggleClass("responsive");
     $("#burger").toggleClass("fa-bars fa-close");
   })
   
@@ -142,7 +139,7 @@
   <p>Below you can find information about all of the projects that I have undertaken over the past few years. Check them out!</p>
   
   <div class="proj">
-    <img src="http://localhost:4000/files/gifs//IAD.gif" class="proj-gif left">
+    <img src="http://localhost:4000/files/gifs//IAD.gif" class="proj-gif center">
     <div class="proj-textbox">
       <span class="proj-title">Into Another Dimension (2022)</span>
       <span class="proj-authors">by Epi Torres</span>

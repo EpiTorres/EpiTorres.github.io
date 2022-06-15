@@ -4,14 +4,10 @@
 
 
 /* Enables the smooth scrolling behavior when moving about the page*/
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth;}
 
 /* Adjusts the styling of the font-awesome icons tags ---*/
-.fa {
-    font-size: inherit;
-}
+.fa { font-size: inherit; }
 
 /* Adjusts the styling of the header tags ---------------*/
 .main-content h1, .main-content h2, 
@@ -22,10 +18,7 @@ html {
 }
 
 /* Anchor for using the navbar to move about the page ---*/
-.nav-anchor {
-    position: relative;
-    top: -115px;
-}
+.nav-anchor { position: relative; top: -115px; }
 
 
 /*-------------------------------------------------------*/
@@ -37,6 +30,7 @@ html {
     background-color: rgba(134, 139, 166, 0.5);
     border: 1px solid rgba(255, 255, 255, 1);
     margin-bottom: 0px;
+    text-decoration: none; 
 }
 
 /* If there's a mouse, styles the button's hover event --*/
@@ -99,6 +93,7 @@ nav a {
     text-decoration: none;
     border-bottom: 5px solid #212226;
 }
+nav a:hover { text-decoration: none; }
 .nav-home {
     float: left;
     font-size: 1.5rem;
